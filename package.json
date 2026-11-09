@@ -1,0 +1,16 @@
+{
+  "name": "libros-recomendados",
+  "version": "1.0.0",
+  "description": "Proyecto modelo de examen - Desarrollo Web: HTML + CSS + JS + Node/Express + SQLite",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

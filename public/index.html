@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sin esta línea el diseño responsive no funciona en celulares -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libros recomendados</title>
+  <meta name="description" content="Lista de libros recomendados por la clase">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <!-- Imagen física guardada en la carpeta img del repositorio -->
+    <img src="img/logo.svg" alt="Logo: un libro abierto" class="logo" width="48" height="48">
+    <h1>Libros recomendados</h1>
+    <button id="btn-tema" type="button" aria-pressed="false">Modo oscuro</button>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="panel" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Agregar un libro</h2>
+      <form id="form-libro">
+        <label for="titulo">Título *</label>
+        <input type="text" id="titulo" name="titulo" required maxlength="100">
+
+        <label for="autor">Autor *</label>
+        <input type="text" id="autor" name="autor" required maxlength="100">
+
+        <label for="portada">URL de la portada (opcional)</label>
+        <input type="url" id="portada" name="portada" placeholder="https://...">
+
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" rows="3" maxlength="300"></textarea>
+
+        <button type="submit">Guardar</button>
+        <p id="mensaje" class="mensaje" role="status"></p>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">Lista <span id="contador" class="contador">0</span></h2>
+      <label for="filtro" class="oculto">Buscar</label>
+      <input type="search" id="filtro" placeholder="Buscar por título o autor...">
+      <ul id="lista" class="grilla"></ul>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto modelo · Desarrollo Web</p>
+  </footer>
+
+  <!-- El script va al final (o con defer) para que el HTML ya exista al ejecutarse -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Libro abierto">
+  <circle cx="24" cy="24" r="23" fill="#ffffff"/>
+  <path d="M10 15c5-2 10-2 14 1v19c-4-3-9-3-14-1z" fill="#1b6b5a"/>
+  <path d="M38 15c-5-2-10-2-14 1v19c4-3 9-3 14-1z" fill="#2f9a82"/>
+  <path d="M24 16v19" stroke="#ffffff" stroke-width="1.2"/>
+</svg>
